@@ -1,0 +1,267 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Rendimiento por Jugador - Numerix Academy</title>
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                    min-height: 100vh;
+                    padding: 20px;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    background: white;
+                    border-radius: 15px;
+                    padding: 30px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                }
+                h1 {
+                    color: #2c3e50;
+                    border-bottom: 3px solid #3498db;
+                    padding-bottom: 15px;
+                    margin-bottom: 30px;
+                }
+                .header-info {
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    margin-bottom: 25px;
+                    border-left: 4px solid #3498db;
+                }
+                .stats-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 15px;
+                    margin-bottom: 30px;
+                }
+                .stat-card {
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                    border: 1px solid #e9ecef;
+                }
+                .stat-value {
+                    font-size: 28px;
+                    font-weight: bold;
+                    color: #2c3e50;
+                }
+                .stat-label {
+                    color: #6c757d;
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                }
+                th {
+                    background: #3498db;
+                    color: white;
+                    padding: 12px;
+                    text-align: left;
+                }
+                td {
+                    padding: 10px 12px;
+                    border-bottom: 1px solid #e9ecef;
+                }
+                tr:hover {
+                    background: #f8f9fa;
+                }
+                .badge {
+                    display: inline-block;
+                    padding: 4px 10px;
+                    border-radius: 12px;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                .badge-success {
+                    background: #d4edda;
+                    color: #155724;
+                }
+                .badge-danger {
+                    background: #f8d7da;
+                    color: #721c24;
+                }
+                .badge-warning {
+                    background: #fff3cd;
+                    color: #856404;
+                }
+                .badge-info {
+                    background: #d1ecf1;
+                    color: #0c5460;
+                }
+                .footer {
+                    margin-top: 30px;
+                    text-align: center;
+                    color: #6c757d;
+                    font-size: 14px;
+                    border-top: 1px solid #e9ecef;
+                    padding-top: 20px;
+                }
+                .no-data {
+                    text-align: center;
+                    padding: 40px;
+                    color: #6c757d;
+                }
+                
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                
+            <h1>🏆 Rendimiento por Jugador</h1>
+            
+            <div class="header-info">
+                <p><strong>Total de Jugadores:</strong> 10</p>
+                <p><strong>Total de Intentos:</strong> 3</p>
+                <p><strong>Porcentaje de Validez Promedio:</strong> 100.00%</p>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Carnet</th>
+                        <th>Nivel</th>
+                        <th>Intentos</th>
+                        <th>Correctos</th>
+                        <th>Tasa de Éxito</th>
+                        <th>Tiempo Promedio (s)</th>
+                        <th>Validez Promedio (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+            
+                    <tr>
+                        <td><strong>Ana Morales</strong></td>
+                        <td>202012345</td>
+                        <td><span class="badge badge-success">Experto</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Carlos Pérez</strong></td>
+                        <td>202013456</td>
+                        <td><span class="badge badge-info">Principiante</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Diego Fuentes</strong></td>
+                        <td>202011234</td>
+                        <td><span class="badge badge-warning">Intermedio</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Elena Flores</strong></td>
+                        <td>202020123</td>
+                        <td><span class="badge badge-warning">Intermedio</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>José Torres</strong></td>
+                        <td>202019012</td>
+                        <td><span class="badge badge-info">Principiante</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Juan Martínez</strong></td>
+                        <td>202015678</td>
+                        <td><span class="badge badge-success">Experto</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Laura García</strong></td>
+                        <td>202016789</td>
+                        <td><span class="badge badge-info">Principiante</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>María López</strong></td>
+                        <td>202014567</td>
+                        <td><span class="badge badge-warning">Intermedio</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Patricia Ramírez</strong></td>
+                        <td>202018901</td>
+                        <td><span class="badge badge-success">Experto</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Roberto Sánchez</strong></td>
+                        <td>202017890</td>
+                        <td><span class="badge badge-warning">Intermedio</span></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td>0.0</td>
+                        <td>0.0%</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+            
+                <div class="footer">
+                    <p>Reporte generado el 13 de August de 2026 a las 09:05</p>
+                    <p>Torneo de Sudoku - Numerix Academy</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        
